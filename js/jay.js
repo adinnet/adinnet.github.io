@@ -7,7 +7,7 @@ var page = document.getElementById('page'),
     fullscreen = window.navigator.standalone,
     android = ~ua.indexOf('Android'),
     lastWidth = 0;
- 
+
 if (android) {
   // Android's browser adds the scroll position to the innerHeight, just to
   // make this really fucking difficult. Thus, once we are scrolled, the
@@ -47,3 +47,12 @@ var setupScroll = window.onload = function() {
   lastWidth = pageWidth;
   setupScroll();
 })();
+
+
+var myScroll;
+function loaded() {
+    myScroll = new iScroll('wrapper');
+}
+
+document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false);
