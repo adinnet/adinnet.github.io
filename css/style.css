@@ -1,1 +1,5 @@
 @charset "utf-8";
+.a_header {
+	background:#323c42 url(../images/public/logo.png) 12px 4px no-repeat;
+	height:48px;
+}
