@@ -40,7 +40,7 @@ var setupScroll = window.onload = function() {
   setTimeout(scrollTo, 0, 0, 1);
 };
 (window.onresize = function() {
-  var pageWidth = page.offsetWidth;
+  var pageWidth = $(page).outerWidth();
   // Android doesn't support orientation change, so check for when the width
   // changes to figure out when the orientation changes
   if (lastWidth == pageWidth) return;
