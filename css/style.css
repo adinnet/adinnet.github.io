@@ -11,6 +11,10 @@ html,body {
 .a_header {
 	background:#323c42 url(../images/public/logo.png) 12px 4px no-repeat;
 	height:48px;
+	padding-bottom:5px;
+	position:relative;
+	z-index:1;
+	box-shadow: inset 0 -2px 0 0 #db9f4c,inset 0 -5px 0 0 #ffffa6, 0 3px 6px 0 rgba(0,0,0,0.5);
 }
 .a_left {
 	float:left;
