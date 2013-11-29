@@ -3,6 +3,13 @@ html,body {
 	height:100%;
 	overflow:auto;
 }
+.companyLink {
+	height:100%;
+	display:block;
+	width:357px;
+	outline:none;
+	background:none;
+}
 .container {
 	height:100%;
 	position:relative;
