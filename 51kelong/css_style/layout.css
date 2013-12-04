@@ -516,16 +516,25 @@ line-height:180%;
 	width: 20px;
 	height: 20px;
 	text-align: center;
+	cursor:pointer;
 }
 .repSub_wrap {
 	padding:8px 0;
 	text-align:right;
 }
 .repSub_wrap input {
-	vertical-align:middle;
+	border:0;
 	height:26px;
-	padding:0 14px;
+	width:64px;
+	*overflow:visible;
+	text-align:center;
+	vertical-align:middle;
 	cursor:pointer;
+	background:url(../images/form/agray_64.gif);
+}
+.repSub_wrap input:hover {
+	background-image:url(../images/form/agreen_64.gif);
+	color:#fff;
 }
 .repinputArea	{
 	min-height:12px;
@@ -767,8 +776,8 @@ a.agreen		{ color:#93d5a0;}
 
 
 .conPapers		{ text-align:center; font-size:0; letter-spacing:-3px; padding-top:10px; padding-bottom:10px;}
-.spper			{ display:inline-block; height:18px; line-height:18px; text-align:center; padding:0 6px; font-size:12px; letter-spacing:normal; margin:0 6px; *margin-right:5px;}
-.spper:hover	{ text-decoration:none;background-color:#92cd45; color:#fff; font-weight:bold;}
+.spper			{ display:inline-block; height:18px; line-height:18px; font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif; text-align:center; padding:0 6px; font-size:12px; letter-spacing:normal; margin:0 6px; *margin-right:5px;}
+.spper:hover	{ text-decoration:none;background-color:#92cd45; color:#fff;}
 
 .steps			{ background-position:center center; background-repeat:no-repeat;}
 .steps-prev		{ padding-left:14px; background:url(../images/paperArrowLeft.gif) left center no-repeat;}
