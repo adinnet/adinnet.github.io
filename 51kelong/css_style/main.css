@@ -1,0 +1,71 @@
+/* CSS Document 2011.8.3 */
+body {font-family:Tahoma; margin:0; padding:0; font-size:12px; background:url(../images/bg.gif) repeat-x center top #ebebeb; color:#797979;}
+div,form,img,ul,ol,li,dl,dt,dd,p{margin:0;padding:0;border:0;}
+ul,li{list-style-type:none;}
+img, a img{border:0; vertical-align:top;}
+input,select,textarea{vertical-align:middle; border:#dfdfdf solid 1px; margin:0px; padding:0px; color:#585858; background-color:#f6f6f6;}
+h1,h2,h3,h4,h5,h6 {margin:0;padding:0;font-size:12px;font-weight:normal;}
+/* Link */
+a{color:#444; text-decoration:none;}
+a:hover {color:#4b941e; text-decoration:underline;}
+
+/* Other */
+.clear{clear:both;font-size:1px;width:1px;height:0;visibility:hidden;overflow:hidden;}
+.clearfix:before,
+.clearfix:after	{ content:""; display:table}
+.clearfix:after	{ clear:both}
+.clearfix { *zoom:1}
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner{
+	border:none;padding:0;
+}
+.mauto{width:1002px; margin:0 auto;}
+.mauto2{ /* overflow:hidden */}
+.mauto3{ border:solid 1px #d7d7d7; background:#fff;}
+.m_auto{margin:0 auto;}
+.fr{ float:right;}
+.fl{ float:left;}
+
+.inpt64{ background:url(../images/form/agray2_64.gif) no-repeat; width:64px; height:26px; line-height:26px; text-align:center; color:#676767; border:0px;  margin:10px 20px 10px 0px;}
+.inpt64:hover{ background:url(../images/form/agreen_64.gif) no-repeat; color:#FFF;border:0px;height:26px; line-height:26px;}
+
+.jainpt68{ background:url(../images/form/ajagray_68.gif) no-repeat; width:68px; height:26px; line-height:26px; text-align:right; padding-right:5px; color:#676767; border:0px;  }
+.jainpt68:hover{ background:url(../images/form/jagreen_68.gif) no-repeat; color:#FFF;border:0px;height:26px; line-height:26px;}
+
+.inpt69{ background:url(../images/form/agray_69.gif) no-repeat; width:69px; height:26px; line-height:26px; text-align:center; color:#676767; border:0px;  margin:10px 20px 10px 0px;}
+.inpt69:hover{ background:url(../images/form/agreen_69.gif) no-repeat; color:#FFF;border:0px;height:26px; line-height:26px;}
+
+.inpt114{ background:url(../images/form/agreen_114.gif) no-repeat; width:114px; height:26px;margin:0px;  text-align:center; color:#fff; border:0px; }
+.inpt114:hover{ background:url(../images/form/agreenu_114.gif) no-repeat; }
+
+.inpt120{ background:url(../images/form/agreen_120.gif) no-repeat; width:120px; height:37px; line-height:37px; text-align:center; color:#fff; border:0px; margin:20px 0px 20px 0px; font-size:14px; font-weight:bold; cursor:pointer; }
+.inpt120:hover{ background:url(../images/form/agreenu_120.gif) no-repeat; }
+.inpt120_2{ background:url(../images/form/ate_120.gif) no-repeat; width:120px; height:37px; line-height:37px; text-align:center; color:#fff; border:0px; margin:20px 0px 20px 0px; font-size:14px; font-weight:bold; cursor:pointer; }
+.inpt120_2:hover{ background:url(../images/form/ateu_120.gif) no-repeat; }
+
+.inpt102{ background:url(../images/form/agreenu_102.gif) no-repeat; width:102px; height:37px; line-height:37px; text-align:center; color:#fff; border:0px; margin:20px 0px 20px 0px; font-size:14px; font-weight:bold;}
+.inpt102:hover{ background:url(../images/form/agreen_102.gif) no-repeat; }
+.inpt102_2{ background:url(../images/form/agray_102.gif) no-repeat; width:102px; height:37px; line-height:37px; text-align:center; color:#444444; border:0px; margin:20px 0px 20px 0px; font-size:14px; }
+.inpt102_2:hover{ background:url(../images/form/agreen_102.gif) no-repeat;font-weight:bold; color:#fff;}
+
+.inpt186{ background:url(../images/form/agreen_login.gif) no-repeat; width:186px; height:42px; line-height:42px; text-align:center; color:#444444; border:0px;  font-size:0px; }
+.inpt186:hover{ background:url(../images/form/agreenu_login.gif) no-repeat;font-weight:bold; color:#fff;}
+
+
+.ip_grzl{ background:url(../images/form/edit_agray_108.gif) no-repeat; width:108px; height:26px; line-height:26px; padding-right:8px;color:#444444; border:0px;text-align:right;}
+.ip_grzl:hover{ background:url(../images/form/edit_agreen_108.gif) no-repeat; color:#FFF}
+
+
+.input230{ width:230px;}
+/*修改630*/
+#pages {clear:both;width:100%; text-align:right;float:left;  margin-top:20px;} 
+#pages a{ display:inline-block; text-align:center;height:23px; line-height:23px; margin-left:5px;} 
+#pages .num{color:#5e5e5e;  text-align:center; font-family:"Comic Sans MS", cursive; font-weight:bold; font-size:14px; width:20px;}
+#pages .numh{ color:#fff;background:url(../images/form/funs_1.jpg) no-repeat; width:20px; height:23px; line-height:23px; text-decoration:none;}
+#pages a:hover.num{ color:#fff;background:url(../images/form/funs_1.jpg) no-repeat; width:20px; height:23px; line-height:23px; text-decoration:none;}
+#pages .next_page{ font-size:12px;background:url(../images/form/next_page_o.gif) no-repeat; width:56px; height:23px; line-height:23px;}
+#pages  a:hover.next_page{text-decoration:none;background:url(../images/form/next_page_h.gif) no-repeat; color:#fff;}
+#pages input { width:30px;}

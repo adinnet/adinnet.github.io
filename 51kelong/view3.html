@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登陆后</title>
+<link href="css_style/font.css" rel="stylesheet" type="text/css" />
+<link href="css_style/main.css" rel="stylesheet" type="text/css" />
+<link href="css_style/layout.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.idTabs.min.js"></script>
+<!--以下是调用一个用于模拟的jQuery插件，我看过原网页，是用ArtDialog,但是这没提供任何插件，我就默认添加了一个 -->
+<script type="text/javascript" src="js/artDialog.js"></script>
+<link rel="stylesheet" href="skins/default.css" />
+<!--[if IE 6]>
+		<script src="js/pngAlaph.js"></script>
+		<script>
+			DD_belatedPNG.fix('.line, .container, .i_n_list, img, div, li, ul, a, strong');
+		</script>
+<![endif]-->
+</head>
+<body>
+<div class="outbox">
+    <div class="header clearfix">
+        <div class="mauto clearfix">
+            <div class="p_logo"><a href="#"><img src="images/logo.png" /></a></div>
+                   <div class="p_login_ok">
+                    <a href="#" class="thum_tx"><img src="images/tmp/thum_tx.jpg" /></a> 
+                    <span class="info">
+                         <span>aABbccC同学</span> 
+                        <a href="#">主页</a>
+                        <a href="#">个人资料</a>
+                        <a href="#" class="p_quit">退出></a>
+                    </span>
+                </div>
+        </div>
+    </div>
+	<div class="p_line"></div> 
+<!--Header2 结束-->
+	<div class="clear"></div>
+	<div class="container mauto mauto3 clearfix">
+    	<div class="auditRight">
+        	<div class="audTips">
+            	<h2>审核的原则</h2>
+                <p>各位尊敬的钻石会员，审核装扮要本着认真、公平、负责的态度哦，否则将可能会被取消钻石会员资格。</p>
+            </div>
+        </div>
+    	<div class="auditLeft">
+        	<div class="QzoneDesignTips">
+            	<h2 class="dth">这里是标题标题</h2>
+               	<div class="qdt_tagesWrap">
+                	标签：
+                    <a href="#" class="qdt">标签</a>
+                    <a href="#" class="qdt">标签</a>
+                    <a href="#" class="qdt">标签</a>
+                </div>
+                <div class="qdt_adPeo">
+                	推荐人：
+                    <a href="#">Sunny</a>
+                </div>
+                <div class="qdt_adZone">
+                	空间地址：
+                    <a href="#" class="agreen">http://123.qzone.qq.com</a>
+                    <a href="#">点击查看空间装扮详情</a>
+                </div>
+            </div>
+            
+            <h2 class="zonePic">空间截图</h2>
+            <div class="zoneAuditSp clearfix">
+            	<div class="zaImg"><img src="images/sample_pic.jpg" alt="" /></div>
+                <p><a class="audLink" href="#"><img src="images/aduPng_1.png" alt="" /><br />推荐</a></p>
+                <p><a class="audLink" href="#"><img src="images/aduPng_2.png" alt="" /><br />还行</a></p>
+                <p><a class="audLink" href="#" onclick="opDemoDialog()"><img src="images/aduPng_3.png" alt="" /><br />不通过</a></p>
+                <p><a href="#" class="audDis">不确定，审核下一个</a></p>
+            </div>
+        </div>
+    	
+        
+    
+  </div>
+</div>
+<!--container 结束-->
+    <div class="clear"></div>
+         <div class="footer">
+           &copy; 2012 素材站 All Rights Reserved.<span><a href="#"> 关于</a> | <a href="#">帮助</a> </span>苏ICP备案号：<a href="#">0000000</a>            
+        </div>
+<!-- dialogArea -->
+<div id="dialogArt" style="display:none">
+	
+    <form action="">
+    <table width="100%" class="diaTableSty-1" border="0">
+        <tr>
+            <th><input type="checkbox" /></th>
+            <td>空间有权限，无法直接查看</td>
+            <th><input type="checkbox" /></th>
+            <td>无效的空间地址</td>
+        </tr>
+        <tr>
+            <th><input type="checkbox" /></th>
+            <td>截图和实际装扮不一致</td>
+            <th><input type="checkbox" /></th>
+            <td>空间无装扮/装扮太少无分享意义</td>
+        </tr>
+        <tr>
+            <th><input type="checkbox" /></th>
+            <td>广告</td>
+            <th><input type="checkbox" /></th>
+            <td>含色情、反动、垃圾等信息</td>
+        </tr>
+        <tr>
+            <th><input type="checkbox" /></th>
+            <td>网上已经有了</td>
+            <th><input type="checkbox" /></th>
+            <td>其他 <input type="text" class="shrez" placeholder="简单描述一下理由吧" /></td>
+        </tr>
+    </table>
+	
+    </form>
+    <div class="pBtnWrap diaBtnsw">
+        <input class="btnG" type="button" onclick="yesDemoDialog()" value="确认" />
+        <input class="btnW" type="button" onclick="closeDemoDialog()" value="取消" />
+    </div>
+</div>
+</body>
+<script type="text/javascript" id="bdshare_js" data="type=button&amp;uid=0" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+function opDemoDialog() {
+	news = art.dialog({
+		lock:true,
+		//width:"580px",
+		title: '请勾选不通过的理由',
+		content: document.getElementById('dialogArt')
+	});
+	//console.log(art.dialog() )
+}
+function closeDemoDialog() {
+	news.close();
+}
+function yesDemoDialog() {
+	news.content("感谢您的意见").title("").time(1);
+}
+</script>
+</html>
