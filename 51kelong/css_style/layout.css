@@ -878,7 +878,7 @@ a.agreen		{ color:#93d5a0;}
 .shareboxp { line-height:77px;}
 .likeit,
 .likeit i { display:inline-block; height:26px;}
-
+.likeit { float:left;}
 .btn_lik { width:65px; height:26px; cursor:pointer; background:url(../images/likit_l.gif); display:inline-block; vertical-align:top;}
 .litkt, 
 .litkt i { display:inline-block; height:26px; line-height:26px; font-style:normal; background:url(../images/kit.gif) no-repeat;}
@@ -890,6 +890,8 @@ a.agreen		{ color:#93d5a0;}
 .linkpl	{ float:right; line-height:26px;}
 .linkpl a { color:#ff6436; text-decoration:underline;}
 
+.likeItRt-wrap .likeit,
+.zInfo .likeit { float:left;}
 .plbox .likeit  { position:relative; display:block; float:left;}
 .lkTip {
 	cursor:auto;
