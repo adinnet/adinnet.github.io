@@ -5,13 +5,23 @@ html,body {
 }
 .companyLink {
 	height:100%;
-	display:block;
-	width:357px;
+	display: inline-block;
+	width:207px;
 	outline:none;
 	background: url(../images/public/svglogo.svg) 9px 2px no-repeat;
 	-webkit-background-size: auto 42px;
 	-moz-background-size: auto 42px;
 	background-size: auto 42px;
+	line-height: 48px;
+	vertical-align: middle;
+}
+.sub_text {
+	display: inline-block;
+	vertical-align: bottom;
+	line-height: 24px;
+	font-size: 14px;
+	color: #fff;
+	text-shadow: 1px 1px 0px #000;
 }
 .container {
 	height:100%;
