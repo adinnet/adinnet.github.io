@@ -1,4 +1,4 @@
-// out:webguide.css, sourceMap:true, compress:false, autoprefixer:> 5% in CN;last 10 versions;Chrome 24
+// out:webguide.css, sourceMap:false, compress:true, autoprefixer:> 5% in CN;last 10 versions;Chrome 24
 @import (reference) "style.less";
 html {
 	height: 100%;
@@ -6,6 +6,13 @@ html {
 }
 body {
 	height: 100%;
+}
+@keyframes bigBoxShadow {
+	0% {  box-shadow: 0px 0px 8px #000;}
+	25% {  box-shadow: 12px 12px 24px #000;}
+	50% { box-shadow: 0px 24px 24px #000; }
+	75% { box-shadow: -12px 12px 24px #000; }
+	100% { box-shadow: 0px 0px 8px #000; }
 }
 .container {
 	height: 100%;
@@ -32,10 +39,7 @@ body {
 	
 	@bgfadeout : 50%;
 	
-//	@keyframes identifier {
-//		from {  box-shadow: }
-//		to {  }
-//	}
+	
 	
 	.cont_box {
 		display: flex;
@@ -49,6 +53,11 @@ body {
 //		.hwACC;
 //		overflow: hidden;
 		border-radius: @bdraVal;
+//		animation-name: bigBoxShadow;
+//		animation-direction: reverse-alternate;
+//		animation-duration: 5s;
+//		animation-iteration-count: infinite;
+//		animation-timing-function: linear;
 	}
 	.css_float_left {
 		float: left;
