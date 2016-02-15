@@ -216,6 +216,12 @@ body {
 .container .thisCpr:before {
   content: 'www.adinnet.cn© 2016';
 }
+.container .thisCpr > a {
+  color: #fff;
+}
+.container .thisCpr > a:hover {
+  text-shadow: 1px 1px 4px #fff;
+}
 .safari .container .flex_title {
   margin-bottom: 0.5px;
 }
@@ -238,11 +244,5 @@ body {
 .safari .container .thisTitle {
   border-top: none ;
   border-bottom: solid 1px #000;
-}
-.safari .container .thisCpr > a {
-  color: #fff;
-}
-.safari .container .thisCpr > a:hover {
-  text-shadow: 1px 1px 4px #fff;
 }
 /*# sourceMappingURL=webguide.css.map */
