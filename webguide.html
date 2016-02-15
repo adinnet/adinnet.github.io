@@ -172,9 +172,9 @@
 	window.jQBrowser.uaMatch = uaMatch;
 	if (typeof jQBrowser != 'undefined') {
 		if (jQBrowser.name == 'msie') {
-			var k = confirm('此网页不支持IE，是否直接下载PDF？');
+			var k = confirm('此网页不支持IE，跳转到建议页面？');
 			if  (k) {
-				window.location.href = "theguide.pdf";
+				window.location.href = "np.html";
 			}
 		}
 		if (jQBrowser.safari) {
