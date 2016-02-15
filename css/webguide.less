@@ -31,8 +31,29 @@ body {
 	@imgSize2: image-height('../images/IMG_1088.jpg');
 	
 	@bgfadeout : 50%;
+	
+//	@keyframes identifier {
+//		from {  box-shadow: }
+//		to {  }
+//	}
+	
+	.cont_box {
+		display: flex;
+		width: @thisWidth;
+		align-items: center;
+		align-content: center;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		box-shadow: 0px 12px 24px #000;
+//		.hwACC;
+//		overflow: hidden;
+		border-radius: @bdraVal;
+	}
+	.css_float_left {
+		float: left;
+	}
 	.flex_items {
-		order: 5;
 		text-decoration: none;
 		color: fadeout(#fff, 40%);
 		display: inline-block;
@@ -40,6 +61,7 @@ body {
 		background-color: fadeout(#fff, @bgfadeout);
 		margin-left: @itemsGutter;
 		-webkit-backdrop-filter:blur(12px);
+		.hwACC;
 //		border-top: @bdstr;
 //		border-left: @bdstr;
 //		border-right: @bdstr2;
@@ -47,7 +69,7 @@ body {
 //		border-radius: @bdraVal;
 		overflow: hidden;
 		box-sizing: border-box;
-		width: @itemsWidth;
+		flex: 1;
 		text-align: center;
 		transition-duration: 1s;
 		transition-property+: color;
@@ -59,29 +81,28 @@ body {
 			text-shadow: 0px 0px 12px fadeout(#fff, 10%);
 			background-color: fadeout(#fff, @bgfadeout / 1.5);
 		}
-		&:first-child {
+		&.fi-1 {
 			margin-left: 0;
 			border-bottom-left-radius: @bdraVal;
 		}
 		
-		&:nth-child(3) {
+		&.fi-3 {
 			border-bottom-right-radius: @bdraVal;
 		}
 	}
-	.flex_split {
-		display: block;
-		height: 0px;
-		width: 100%;
-		background-color: transparent;
-		&.fp1 {
-			order: 2;
-		}
-		&.fp2 {
-			order: 4;
-		}
-	}
+//	.flex_split {
+//		display: block;
+//		height: 0px;
+//		width: 100%;
+//		background-color: transparent;
+//		&.fp1 {
+//			order: 2;
+//		}
+//		&.fp2 {
+//			order: 4;
+//		}
+//	}
 	.flex_view {
-		order: 3;
 		display: block;
 		width: @thisWidth;
 		height: @thisHeight;
@@ -92,7 +113,6 @@ body {
 		background-image+: url('../images/IMG_1088.jpg');
 		background-size+: 100%;
 		background-size+: @imgSize1 / 4 @imgSize2 / 4;
-		.hwACC;
 		& > img {
 			vertical-align: top;
 			width: 100%;
@@ -100,7 +120,6 @@ body {
 	}
 	.flex_title {
 		@thisTitleHeight: 64px;
-		order: 1;
 		height: @thisTitleHeight;
 		width: @thisWidth;
 		border-top-left-radius: @bdraVal;
