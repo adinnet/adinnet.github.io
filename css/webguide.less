@@ -1,5 +1,5 @@
-// out:webguide.css, sourceMap:true, compress:false, autoprefixer:> 5% in CN;last 10 versions;Chrome 24
 // out:webguide.css, sourceMap:false, compress:true, autoprefixer:> 5% in CN;last 10 versions;Chrome 24
+// out:webguide.css, sourceMap:true, compress:false, autoprefixer:> 5% in CN;last 10 versions;Chrome 24
 @import (reference) "style.less";
 html {
 	height: 100%;
@@ -17,7 +17,7 @@ body {
 }
 .container {
 	height: 100%;
-	background-image: url('../images/462196.jpg');
+	background-image: url('http://7xrf6i.com1.z0.glb.clouddn.com/462196.jpg');
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -31,17 +31,17 @@ body {
 	@bdraVal:3px;
 	@bdstr:solid 1px fadeout(#fff, 80%);
 	@bdstr2:solid 1px fadeout(#000, 60%);
-	
+
 	@itemsLength:3;
 	@thisWidth: @itemsWidth * @itemsLength + @itemsGutter * (@itemsLength - 1);
 	@thisHeight: @thisWidth * .618;
 	@imgSize1: image-width('../images/IMG_1088.jpg');
 	@imgSize2: image-height('../images/IMG_1088.jpg');
-	
+
 	@bgfadeout : 50%;
-	
-	
-	
+
+
+
 	.cont_box {
 		display: flex;
 		width: @thisWidth;
@@ -95,7 +95,7 @@ body {
 			margin-left: 0;
 			border-bottom-left-radius: @bdraVal;
 		}
-		
+
 		&.fi-3 {
 			border-bottom-right-radius: @bdraVal;
 		}
@@ -119,7 +119,7 @@ body {
 		margin-bottom: @itemsGutter;
 		background-color: #fff;
 		overflow: hidden;
-		background-image+: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 37%, rgba(255, 255, 255, 0) 37%); 
+		background-image+: linear-gradient(135deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 37%, rgba(255, 255, 255, 0) 37%);
 		background-image+: url('../images/IMG_1088.jpg');
 		background-size+: 100%;
 		background-size+: @imgSize1 / 4 @imgSize2 / 4;
